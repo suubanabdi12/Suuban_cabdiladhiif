@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+</head>
+<body>
+
+<script>
+    let attempts = 1;
+    let guess = Number(prompt("Guess number: "));
+
+    while (guess !== 7) {
+        attempts++;
+
+        if (guess > 7) {
+            console.log("Too high");
+        } else {
+            console.log("Too low");
+        }
+
+        guess = Number(prompt("Guess again: "));
+    }
+
+    attempts++;
+
+    console.log("Correct number!");
+    console.log("Number of attempts: " + attempts);
+</script>
+
+</body>
+</html>
